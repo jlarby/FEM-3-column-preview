@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-/hub/3-column-card-15-days-into-learning-html-and-css-cBA_eY_Uk)
+- Live Site URL: [On Netlify](https://awesome-curran-b4a75c.netlify.app/)
 
 ## My process
 
