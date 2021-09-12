@@ -1,0 +1,150 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/* Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Root variable styles */
+:root {
+  /* Primary */
+  --b-o: hsl(31, 77%, 52%);
+  --d-c: hsl(184, 100%, 22%);
+  --v-d-c: hsl(179, 100%, 13%);
+  /* Neutral */
+  --tr-wht: hsla(0, 0%, 100%, 0.75);
+  --v-l-g: hsl(0, 0%, 95%);
+}
+/* Main Body Styling */
+html,
+body {
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  background-color: var(--v-l-g);
+}
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Utilities */
+.mb {
+  margin-bottom: 1.6rem;
+}
+.mt {
+  margin-top: 1.6rem;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+.pb {
+  padding-bottom: 1.6rem;
+}
+.pt {
+  padding-top: 1.6rem;
+}
+a {
+  color: var(--tr-wht);
+  text-decoration: none;
+}
+.btn {
+  background: var(--v-l-g);
+  padding: 10px 25px;
+  border-radius: 50px;
+  align-self: flex-end;
+  border: 2px solid var(--v-l-g);
+  transition: 0.1s ease-in-out;
+}
+.btn:hover {
+  background: transparent;
+  color: var(--v-l-g);
+}
+.b-o {
+  color: hsl(31, 77%, 52%);
+}
+.d-c {
+  color: hsl(184, 100%, 22%);
+}
+.v-d-c {
+  color: hsl(179, 100%, 13%);
+}
+/* Columns */
+.col {
+  width: 33.33%;
+  height: 100%;
+  padding: 50px 75px 50px 50px;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+.col-top-img {
+  width: 100%;
+}
+.sedans {
+  background-color: var(--b-o);
+}
+.suvs {
+  background-color: var(--d-c);
+}
+.luxury {
+  background-color: var(--v-d-c);
+}
+/* Card */
+.card {
+  height: 450px;
+  width: 1000px;
+  background-color: aqua;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+}
+/* Card Body Styles */
+.card-title {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--v-l-g);
+  align-self: flex-start;
+}
+.card-text {
+  line-height: 1.4rem;
+  color: var(--tr-wht);
+  align-self: flex-start;
+}
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  position: absolute;
+  bottom: 5px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 1125px) {
+  .card {
+    width: 350px;
+    height: unset;
+    flex-flow: column wrap;
+    margin-top: 20px;
+  }
+  section {
+    height: unset;
+  }
+  .col {
+    width: 100%;
+  }
+  .mt-5 {
+    margin-top: 2rem;
+  }
+  .attribution {
+    position: unset;
+    text-align: center;
+    padding: 20px 0;
+  }
+}
